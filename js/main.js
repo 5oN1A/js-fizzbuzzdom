@@ -17,25 +17,50 @@ const cellsContainer = document.getElementById("cells-container");
 for (let i = 1; i <= 100; i++) {
     const cell = document.createElement("div");
 
-    cell.classList.add("my-col-7");
+   /*cell.classList.add("my-col-7");
     cell.innerHTML += `<div class="ratio d-flex justify-content-center align-items-center ratio-1x1 my-bg-blue">
                             ${i}
                         </div>`
     cellsContainer.append(cell);
 
 
+   // console.log(multipli di 5);
+    console.log(i, i % 5);
+    //console.log(multipli di 3);
+    console.log(i, i % 3);
+*/
 
+    if (i % 3 === 0) {  
+       const cell = document.createElement("div");
 
-   /* if (i % 3 === 0) && (i % 5 != 0) {  
-       
-     }else if (i % 5 === 0) && (i % 3 != 0) {
+        cell.classList.add("my-col-7");
+        cell.innerHTML += `<div class="ratio d-flex justify-content-center align-items-center ratio-1x1 my-bg-fizz">
+                            ${i}
+                        </div>`
+        cellsContainer.append(cell);
 
-     }else if (i % 3 === 0) && (i % 5 === 0) {
+    }else if (i % 5 === 0) {
+        const cell = document.createElement("div");
 
-     } else {
-         
-     }
+        cell.classList.add("my-col-7");
+        cell.innerHTML += `<div class="ratio d-flex justify-content-center align-items-center ratio-1x1 my-bg-buzz">
+                            ${i}
+                        </div>`
+        cellsContainer.append(cell);
+
+     }/*else if (i % 3 === 0 && i % 5 === 0) {
+        const cell = document.createElement("div");
+
+        cell.classList.add("my-col-7");
+        cell.innerHTML += `<div class="ratio d-flex justify-content-center align-items-center ratio-1x1 my-bg-fizzbuzz">
+                            ${i}
+                        </div>`
+        cellsContainer.append(cell);
+
+     } 
+
+     }*/
      
      
-     */
+     
 }
