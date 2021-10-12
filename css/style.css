@@ -7,3 +7,26 @@ h1 {
     color: white;
     text-align: center;
 }
+
+.my-col-7 {
+    width: calc(100% / 7);
+}
+
+.my-bg-blue {
+    background-color: #1389b2; 
+}
+
+.my-bg-fizz {
+    background-color: #10D6A1; 
+}
+
+.my-bg-buzz {
+    background-color: #FFD166; 
+}
+
+.my-bg-fizzbuzz {
+    background-color: #ED456F; 
+}
+
+
+
